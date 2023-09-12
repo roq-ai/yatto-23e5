@@ -1,0 +1,2372 @@
+[
+  {
+    "api": [
+      {
+        "id": "cd9827cc-24f6-4460-8ea0-2025555ba1e9",
+        "name": "Weather API",
+        "format": "JSON",
+        "created_at": "2023-09-11T20:45:45.730Z",
+        "updated_at": "2023-09-11T21:04:35.878Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "6c9fa62b-685e-47b0-b843-8a2911062cd0",
+        "name": "Payment Gateway API",
+        "format": "XML",
+        "created_at": "2023-09-12T02:06:59.672Z",
+        "updated_at": "2023-09-11T09:36:56.558Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "7fa28e71-fb06-4b96-8704-d21f1f726478",
+        "name": "Social Media API",
+        "format": "CSV",
+        "created_at": "2023-09-11T12:21:21.524Z",
+        "updated_at": "2023-09-11T18:55:43.799Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "e6f42cf4-0c20-49a4-af29-f0d8dde838f0",
+        "name": "Email Service API",
+        "format": "GraphQL",
+        "created_at": "2023-09-12T04:38:18.461Z",
+        "updated_at": "2023-09-11T11:39:51.644Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "3513875a-563b-4531-8609-f187e636ee4e",
+        "name": "Image Recognition API",
+        "format": "Protobuf",
+        "created_at": "2023-09-11T20:42:56.378Z",
+        "updated_at": "2023-09-11T12:21:36.862Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "test_run": [
+      {
+        "id": "bc4da85f-032a-4262-9fa6-0219a50af535",
+        "start_time": "2023-09-12T06:15:17.389Z",
+        "end_time": "2023-09-11T22:29:49.121Z",
+        "status": "Passed",
+        "created_at": "2023-09-12T04:38:00.078Z",
+        "updated_at": "2023-09-11T12:56:42.094Z",
+        "api_id": "cd9827cc-24f6-4460-8ea0-2025555ba1e9",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "eaa1cbf6-2039-41c0-8720-202909f3b618",
+        "start_time": "2023-09-11T19:34:22.302Z",
+        "end_time": "2023-09-11T09:26:29.900Z",
+        "status": "Failed",
+        "created_at": "2023-09-12T00:40:50.434Z",
+        "updated_at": "2023-09-11T17:17:25.370Z",
+        "api_id": "cd9827cc-24f6-4460-8ea0-2025555ba1e9",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b0312fc7-1576-4bbc-98cd-adc9f6a66b31",
+        "start_time": "2023-09-12T08:46:28.791Z",
+        "end_time": "2023-09-12T04:27:48.952Z",
+        "status": "Pending",
+        "created_at": "2023-09-11T12:22:52.283Z",
+        "updated_at": "2023-09-12T04:41:40.075Z",
+        "api_id": "7fa28e71-fb06-4b96-8704-d21f1f726478",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3810f562-cbb1-4026-9db0-59721b5127aa",
+        "start_time": "2023-09-12T03:45:57.568Z",
+        "end_time": "2023-09-12T04:34:06.256Z",
+        "status": "Skipped",
+        "created_at": "2023-09-12T09:21:07.544Z",
+        "updated_at": "2023-09-11T18:31:53.803Z",
+        "api_id": "cd9827cc-24f6-4460-8ea0-2025555ba1e9",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ac4895d1-7364-4d96-8a55-0b2d08406c60",
+        "start_time": "2023-09-11T16:38:29.376Z",
+        "end_time": "2023-09-12T06:26:44.896Z",
+        "status": "Aborted",
+        "created_at": "2023-09-12T01:19:26.149Z",
+        "updated_at": "2023-09-11T21:23:11.389Z",
+        "api_id": "3513875a-563b-4531-8609-f187e636ee4e",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "test_result": [
+      {
+        "id": "2e894a56-fbfa-41cf-bcad-094f8da4087d",
+        "vulnerability": "SQL Injection",
+        "severity": "Critical",
+        "description": "The vulnerability allows unauthorized access to the database.",
+        "created_at": "2023-09-11T14:16:16.993Z",
+        "updated_at": "2023-09-11T22:38:56.549Z",
+        "test_run_id": "eaa1cbf6-2039-41c0-8720-202909f3b618"
+      },
+      {
+        "id": "26bf68da-d0ac-488f-916b-2fe86c0109ba",
+        "vulnerability": "Cross-Site Scripting (XSS)",
+        "severity": "High",
+        "description": "The vulnerability allows execution of arbitrary code on the server.",
+        "created_at": "2023-09-12T06:45:40.028Z",
+        "updated_at": "2023-09-12T07:06:13.564Z",
+        "test_run_id": "3810f562-cbb1-4026-9db0-59721b5127aa"
+      },
+      {
+        "id": "a30ea601-b7bd-479d-a8fb-7072434bc1d1",
+        "vulnerability": "Remote Code Execution",
+        "severity": "Medium",
+        "description": "The vulnerability exposes sensitive information to unauthorized users.",
+        "created_at": "2023-09-11T10:26:50.642Z",
+        "updated_at": "2023-09-12T05:30:38.495Z",
+        "test_run_id": "eaa1cbf6-2039-41c0-8720-202909f3b618"
+      },
+      {
+        "id": "76f9be93-76bf-4899-ab7f-7f2fff0aefba",
+        "vulnerability": "Information Disclosure",
+        "severity": "Low",
+        "description": "The vulnerability causes the system to crash or become unresponsive.",
+        "created_at": "2023-09-11T11:55:41.555Z",
+        "updated_at": "2023-09-11T13:35:51.606Z",
+        "test_run_id": "3810f562-cbb1-4026-9db0-59721b5127aa"
+      },
+      {
+        "id": "b9dd18ec-588d-4d04-836d-c2096c27d52d",
+        "vulnerability": "Denial of Service (DoS)",
+        "severity": "Info",
+        "description": "The vulnerability provides additional information about the system.",
+        "created_at": "2023-09-11T12:07:36.380Z",
+        "updated_at": "2023-09-11T11:39:39.302Z",
+        "test_run_id": "b0312fc7-1576-4bbc-98cd-adc9f6a66b31"
+      }
+    ],
+    "ci_cd_integration": [
+      {
+        "id": "834bab7e-53be-4c28-922f-4d849c5497f0",
+        "name": "Jenkins",
+        "integration_type": "Continuous Integration",
+        "created_at": "2023-09-11T13:36:46.900Z",
+        "updated_at": "2023-09-11T19:50:39.019Z",
+        "api_id": "3513875a-563b-4531-8609-f187e636ee4e",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e6c6692c-86df-442a-866d-18551da2f7e3",
+        "name": "Travis CI",
+        "integration_type": "Continuous Delivery",
+        "created_at": "2023-09-12T03:16:16.035Z",
+        "updated_at": "2023-09-11T18:27:15.509Z",
+        "api_id": "3513875a-563b-4531-8609-f187e636ee4e",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "fd567357-633d-4f5c-b497-360e2700d5f6",
+        "name": "CircleCI",
+        "integration_type": "Continuous Deployment",
+        "created_at": "2023-09-12T04:38:25.527Z",
+        "updated_at": "2023-09-11T21:06:45.236Z",
+        "api_id": "3513875a-563b-4531-8609-f187e636ee4e",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a936eb8c-ee3e-4d95-ac91-2fcdcefde081",
+        "name": "GitLab CI/CD",
+        "integration_type": "Build Automation",
+        "created_at": "2023-09-12T01:15:11.820Z",
+        "updated_at": "2023-09-12T06:12:59.888Z",
+        "api_id": "7fa28e71-fb06-4b96-8704-d21f1f726478",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "1bc3904a-3f68-49cc-a64c-5b14ab44fd08",
+        "name": "Bitbucket Pipelines",
+        "integration_type": "Test Automation",
+        "created_at": "2023-09-11T19:13:23.139Z",
+        "updated_at": "2023-09-11T21:31:21.936Z",
+        "api_id": "cd9827cc-24f6-4460-8ea0-2025555ba1e9",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "651b1c32-6abb-4a2a-a2ef-3201bf31bac0",
+        "email": "Sallie43@yahoo.com",
+        "firstName": "Wendy",
+        "lastName": "Ritchie",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1045.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "75a6e774-0245-42cf-865d-f6968ee8d580",
+        "email": "Josephine.Jacobi74@hotmail.com",
+        "firstName": "Willie",
+        "lastName": "Bogan-Thompson",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/69634628",
+        "tenantId": null
+      },
+      {
+        "reference": "2b421368-b8c8-481c-9dca-997e74fc1bfd",
+        "email": "Gwen.Koepp@hotmail.com",
+        "firstName": "Conrad",
+        "lastName": "Effertz",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/25845657",
+        "tenantId": null
+      },
+      {
+        "reference": "1ede0df1-8332-46ce-9cdf-1c1837f6ce4b",
+        "email": "Dustin30@gmail.com",
+        "firstName": "Chyna",
+        "lastName": "Donnelly",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/274.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "5ab69e16-2000-4c8e-97f4-83f89b771200",
+        "email": "Sheila_Douglas96@gmail.com",
+        "firstName": "Bryce",
+        "lastName": "Haley-Volkman",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1812772",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "api": [
+      {
+        "id": "385c267c-7468-4b9e-92e3-9d8106010a68",
+        "name": "Weather API",
+        "format": "JSON",
+        "created_at": "2023-09-11T10:34:30.341Z",
+        "updated_at": "2023-09-12T07:08:50.138Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "b90e2774-d7be-4c3e-8837-505e6dfab45a",
+        "name": "Payment Gateway API",
+        "format": "XML",
+        "created_at": "2023-09-11T17:49:19.142Z",
+        "updated_at": "2023-09-11T11:25:04.104Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "547b933e-a086-4a45-8e54-b5643361a5af",
+        "name": "Social Media API",
+        "format": "CSV",
+        "created_at": "2023-09-11T16:41:27.977Z",
+        "updated_at": "2023-09-11T09:40:20.687Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "3e0ec0a2-e723-400a-973a-33901be0f2f6",
+        "name": "Email Service API",
+        "format": "GraphQL",
+        "created_at": "2023-09-11T20:26:55.932Z",
+        "updated_at": "2023-09-11T10:31:36.379Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "31ede446-c5b1-4f68-a0dc-a59d7942d25d",
+        "name": "Maps API",
+        "format": "SOAP",
+        "created_at": "2023-09-12T06:54:14.777Z",
+        "updated_at": "2023-09-12T06:01:01.215Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "test_run": [
+      {
+        "id": "44197fd3-730d-47b2-a0b9-2ef72a53bf5c",
+        "start_time": "2023-09-11T12:17:47.038Z",
+        "end_time": "2023-09-12T06:28:07.719Z",
+        "status": "Passed",
+        "created_at": "2023-09-12T02:39:57.498Z",
+        "updated_at": "2023-09-11T12:58:05.221Z",
+        "api_id": "547b933e-a086-4a45-8e54-b5643361a5af",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a3489a88-240c-40f5-8654-cb7c185a1dc8",
+        "start_time": "2023-09-12T01:19:03.892Z",
+        "end_time": "2023-09-11T23:06:16.694Z",
+        "status": "Failed",
+        "created_at": "2023-09-11T18:31:41.061Z",
+        "updated_at": "2023-09-11T19:56:07.906Z",
+        "api_id": "547b933e-a086-4a45-8e54-b5643361a5af",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b4662b92-7ef3-497f-8b20-71a4e167dee7",
+        "start_time": "2023-09-11T22:42:19.403Z",
+        "end_time": "2023-09-11T18:33:34.005Z",
+        "status": "Running",
+        "created_at": "2023-09-11T21:01:29.457Z",
+        "updated_at": "2023-09-11T21:38:41.059Z",
+        "api_id": "31ede446-c5b1-4f68-a0dc-a59d7942d25d",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "7eb1b6d8-70a3-470f-acf3-16485e1c516b",
+        "start_time": "2023-09-11T09:25:50.133Z",
+        "end_time": "2023-09-11T19:15:20.776Z",
+        "status": "Pending",
+        "created_at": "2023-09-12T07:19:57.170Z",
+        "updated_at": "2023-09-11T22:24:44.851Z",
+        "api_id": "385c267c-7468-4b9e-92e3-9d8106010a68",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "bca69d85-2ad3-4715-b4b8-ca5d5fb7e197",
+        "start_time": "2023-09-12T04:28:12.448Z",
+        "end_time": "2023-09-11T15:20:55.402Z",
+        "status": "Blocked",
+        "created_at": "2023-09-11T14:23:10.121Z",
+        "updated_at": "2023-09-11T17:21:03.251Z",
+        "api_id": "b90e2774-d7be-4c3e-8837-505e6dfab45a",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "test_result": [
+      {
+        "id": "1350b680-f76e-4523-9708-1b47e715fd53",
+        "vulnerability": "SQL Injection",
+        "severity": "High",
+        "description": "Test result description 1",
+        "created_at": "2023-09-11T21:12:14.729Z",
+        "updated_at": "2023-09-12T02:34:03.424Z",
+        "test_run_id": "7eb1b6d8-70a3-470f-acf3-16485e1c516b"
+      },
+      {
+        "id": "e18f2861-0759-4623-b2bb-a3a62b36abbf",
+        "vulnerability": "Cross-Site Scripting",
+        "severity": "Medium",
+        "description": "Test result description 2",
+        "created_at": "2023-09-12T04:47:07.755Z",
+        "updated_at": "2023-09-12T08:47:37.939Z",
+        "test_run_id": "a3489a88-240c-40f5-8654-cb7c185a1dc8"
+      },
+      {
+        "id": "5ecfdcc6-30b4-4d35-b0af-b6773a16ec40",
+        "vulnerability": "Broken Authentication",
+        "severity": "Low",
+        "description": "Test result description 3",
+        "created_at": "2023-09-11T16:09:42.771Z",
+        "updated_at": "2023-09-12T03:40:35.908Z",
+        "test_run_id": "a3489a88-240c-40f5-8654-cb7c185a1dc8"
+      },
+      {
+        "id": "d5c0bc01-0331-4d5d-a49e-c88204d155f0",
+        "vulnerability": "Sensitive Data Exposure",
+        "severity": "Critical",
+        "description": "Test result description 4",
+        "created_at": "2023-09-12T06:14:58.693Z",
+        "updated_at": "2023-09-11T20:58:42.872Z",
+        "test_run_id": "b4662b92-7ef3-497f-8b20-71a4e167dee7"
+      },
+      {
+        "id": "fea08b0b-e27f-4200-886f-2ab590d86d79",
+        "vulnerability": "XML External Entity",
+        "severity": "Informational",
+        "description": "Test result description 5",
+        "created_at": "2023-09-11T12:52:42.168Z",
+        "updated_at": "2023-09-11T13:26:14.004Z",
+        "test_run_id": "bca69d85-2ad3-4715-b4b8-ca5d5fb7e197"
+      }
+    ],
+    "ci_cd_integration": [
+      {
+        "id": "15aee28a-6a76-4527-aab8-7fc2c7018540",
+        "name": "Jenkins",
+        "integration_type": "Continuous Integration",
+        "created_at": "2023-09-12T07:48:23.644Z",
+        "updated_at": "2023-09-12T07:25:57.801Z",
+        "api_id": "31ede446-c5b1-4f68-a0dc-a59d7942d25d",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "2b7102d6-9891-4b8f-afc6-cada85cf709b",
+        "name": "Travis CI",
+        "integration_type": "Continuous Deployment",
+        "created_at": "2023-09-12T03:21:18.480Z",
+        "updated_at": "2023-09-11T11:52:42.876Z",
+        "api_id": "b90e2774-d7be-4c3e-8837-505e6dfab45a",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "767e6790-9d54-404f-af32-f35aa1855274",
+        "name": "CircleCI",
+        "integration_type": "Continuous Delivery",
+        "created_at": "2023-09-12T05:06:04.673Z",
+        "updated_at": "2023-09-11T16:32:59.110Z",
+        "api_id": "385c267c-7468-4b9e-92e3-9d8106010a68",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f7eb7516-99f8-424f-abfb-5da7ad403e26",
+        "name": "GitLab CI",
+        "integration_type": "Code Review",
+        "created_at": "2023-09-11T10:56:49.640Z",
+        "updated_at": "2023-09-11T11:20:48.930Z",
+        "api_id": "3e0ec0a2-e723-400a-973a-33901be0f2f6",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "dddcbda9-7158-4f2f-b8b1-d495cf6a3e0a",
+        "name": "Bamboo",
+        "integration_type": "Automated Testing",
+        "created_at": "2023-09-12T01:25:33.427Z",
+        "updated_at": "2023-09-12T02:46:08.719Z",
+        "api_id": "31ede446-c5b1-4f68-a0dc-a59d7942d25d",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "344cd12d-c083-47a9-aa98-ccaf7b8ec015",
+        "email": "Ardith.Grimes55@yahoo.com",
+        "firstName": "Wyman",
+        "lastName": "Shields",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/68234838",
+        "tenantId": null
+      },
+      {
+        "reference": "0c7d0750-36ac-4087-9508-d4411336f6da",
+        "email": "Cindy_Conn@hotmail.com",
+        "firstName": "Norene",
+        "lastName": "Hamill",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/74128670",
+        "tenantId": null
+      },
+      {
+        "reference": "045b9c66-2958-4899-bbc3-0b1e2e5a250f",
+        "email": "Madison.Cassin87@hotmail.com",
+        "firstName": "Suzanne",
+        "lastName": "Wisozk",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/55.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9f1f3776-ce09-495c-b4e7-87ca18f93b00",
+        "email": "Kylee_Rohan49@hotmail.com",
+        "firstName": "Odie",
+        "lastName": "Cormier",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1228.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "99a4092e-fda7-4795-afbd-02db7856b3c4",
+        "email": "Zoey.Wehner@gmail.com",
+        "firstName": "Jamey",
+        "lastName": "Trantow",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/50938979",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "api": [
+      {
+        "id": "c262d72b-5118-459c-942d-81e5ccf680a4",
+        "name": "Weather API",
+        "format": "JSON",
+        "created_at": "2023-09-12T06:12:11.375Z",
+        "updated_at": "2023-09-12T06:25:15.652Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "736da720-e3da-4c17-bedc-4def49857daa",
+        "name": "Payment Gateway API",
+        "format": "XML",
+        "created_at": "2023-09-12T03:34:40.561Z",
+        "updated_at": "2023-09-11T18:41:28.173Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "bffdc215-5fed-4656-91f9-38fd0421627c",
+        "name": "Social Media API",
+        "format": "CSV",
+        "created_at": "2023-09-11T16:35:55.510Z",
+        "updated_at": "2023-09-11T10:46:16.145Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "0d23f98c-5cf0-4e37-9774-b0a731573654",
+        "name": "Email Delivery API",
+        "format": "GraphQL",
+        "created_at": "2023-09-12T07:20:32.299Z",
+        "updated_at": "2023-09-11T13:07:59.506Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "9d2b04ce-1cbc-43bd-968e-5cb494a95b7b",
+        "name": "Maps API",
+        "format": "Protobuf",
+        "created_at": "2023-09-11T15:47:49.468Z",
+        "updated_at": "2023-09-12T03:43:46.554Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "test_run": [
+      {
+        "id": "8a8a9a96-74de-4947-b9cf-6a9d0f33f077",
+        "start_time": "2023-09-11T12:25:40.585Z",
+        "end_time": "2023-09-11T13:11:43.845Z",
+        "status": "Passed",
+        "created_at": "2023-09-12T05:41:23.838Z",
+        "updated_at": "2023-09-11T13:05:19.692Z",
+        "api_id": "c262d72b-5118-459c-942d-81e5ccf680a4",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "544fd890-4d92-4b1c-bed2-728b830d2bc2",
+        "start_time": "2023-09-11T15:33:02.545Z",
+        "end_time": "2023-09-11T15:17:43.587Z",
+        "status": "Failed",
+        "created_at": "2023-09-12T07:45:54.660Z",
+        "updated_at": "2023-09-12T08:26:59.143Z",
+        "api_id": "736da720-e3da-4c17-bedc-4def49857daa",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a306766a-6785-47b3-82fb-aab1ce5107f5",
+        "start_time": "2023-09-11T11:43:51.126Z",
+        "end_time": "2023-09-12T00:04:35.977Z",
+        "status": "Pending",
+        "created_at": "2023-09-12T02:56:42.985Z",
+        "updated_at": "2023-09-11T10:39:15.645Z",
+        "api_id": "9d2b04ce-1cbc-43bd-968e-5cb494a95b7b",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "42835e8d-e6c4-490a-ada2-5833446cc0ba",
+        "start_time": "2023-09-11T19:20:28.759Z",
+        "end_time": "2023-09-11T22:23:21.148Z",
+        "status": "Skipped",
+        "created_at": "2023-09-11T19:19:56.938Z",
+        "updated_at": "2023-09-12T09:16:47.797Z",
+        "api_id": "bffdc215-5fed-4656-91f9-38fd0421627c",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "77affe5e-7f55-444d-a1a3-7bef1b5015c3",
+        "start_time": "2023-09-12T04:19:32.957Z",
+        "end_time": "2023-09-11T16:46:16.847Z",
+        "status": "Running",
+        "created_at": "2023-09-11T09:31:22.907Z",
+        "updated_at": "2023-09-11T09:40:10.241Z",
+        "api_id": "bffdc215-5fed-4656-91f9-38fd0421627c",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "test_result": [
+      {
+        "id": "890a690b-b42c-4b28-a50f-2c87d2e687dd",
+        "vulnerability": "Cross-site scripting (XSS)",
+        "severity": "High",
+        "description": "Vulnerability found in authentication module",
+        "created_at": "2023-09-11T15:08:45.954Z",
+        "updated_at": "2023-09-12T00:53:06.662Z",
+        "test_run_id": "a306766a-6785-47b3-82fb-aab1ce5107f5"
+      },
+      {
+        "id": "26499f15-aeab-40a1-94b0-7e874f328938",
+        "vulnerability": "SQL injection",
+        "severity": "Medium",
+        "description": "Data leakage due to insecure configuration",
+        "created_at": "2023-09-12T07:55:02.199Z",
+        "updated_at": "2023-09-11T09:59:39.130Z",
+        "test_run_id": "77affe5e-7f55-444d-a1a3-7bef1b5015c3"
+      },
+      {
+        "id": "a62db097-7930-413a-aff7-9feec11431fb",
+        "vulnerability": "Remote code execution",
+        "severity": "Low",
+        "description": "Buffer overflow in network protocol",
+        "created_at": "2023-09-12T05:44:20.125Z",
+        "updated_at": "2023-09-11T14:13:54.962Z",
+        "test_run_id": "544fd890-4d92-4b1c-bed2-728b830d2bc2"
+      },
+      {
+        "id": "bc6ee00a-56f5-4e1f-be0e-a694a279b372",
+        "vulnerability": "Information disclosure",
+        "severity": "Critical",
+        "description": "Access control bypass in user management",
+        "created_at": "2023-09-11T12:32:40.462Z",
+        "updated_at": "2023-09-11T16:06:39.838Z",
+        "test_run_id": "77affe5e-7f55-444d-a1a3-7bef1b5015c3"
+      },
+      {
+        "id": "40c5fd26-d0b4-4cd4-ad62-4fc7489bfdb6",
+        "vulnerability": "Denial of service (DoS)",
+        "severity": "Informational",
+        "description": "Insecure direct object references",
+        "created_at": "2023-09-11T09:57:54.703Z",
+        "updated_at": "2023-09-12T01:34:28.942Z",
+        "test_run_id": "42835e8d-e6c4-490a-ada2-5833446cc0ba"
+      }
+    ],
+    "ci_cd_integration": [
+      {
+        "id": "405c1647-50ec-4006-bdbd-31c83c13d741",
+        "name": "Jenkins",
+        "integration_type": "Continuous Integration",
+        "created_at": "2023-09-11T23:18:59.993Z",
+        "updated_at": "2023-09-11T11:45:41.804Z",
+        "api_id": "c262d72b-5118-459c-942d-81e5ccf680a4",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "68692897-3bdd-44ac-bbc2-d16ea3da06cc",
+        "name": "Travis CI",
+        "integration_type": "Continuous Deployment",
+        "created_at": "2023-09-11T19:46:00.163Z",
+        "updated_at": "2023-09-11T14:50:35.562Z",
+        "api_id": "9d2b04ce-1cbc-43bd-968e-5cb494a95b7b",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "6272d630-65a0-4acd-9871-ccf066768f98",
+        "name": "CircleCI",
+        "integration_type": "Continuous Delivery",
+        "created_at": "2023-09-11T14:34:14.423Z",
+        "updated_at": "2023-09-12T08:46:01.731Z",
+        "api_id": "9d2b04ce-1cbc-43bd-968e-5cb494a95b7b",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e0d93914-b024-43cc-8914-c256d5fd3717",
+        "name": "GitLab CI/CD",
+        "integration_type": "Build Automation",
+        "created_at": "2023-09-12T07:25:35.898Z",
+        "updated_at": "2023-09-11T18:07:25.310Z",
+        "api_id": "c262d72b-5118-459c-942d-81e5ccf680a4",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "402467e6-ad6f-4ba5-808f-ba449c5d6116",
+        "name": "TeamCity",
+        "integration_type": "Test Automation",
+        "created_at": "2023-09-11T20:38:26.315Z",
+        "updated_at": "2023-09-11T14:42:32.231Z",
+        "api_id": "c262d72b-5118-459c-942d-81e5ccf680a4",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "39600a66-03a1-4388-a73d-95bf1ac2480f",
+        "email": "Flossie11@hotmail.com",
+        "firstName": "Harry",
+        "lastName": "Ziemann",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/85699941",
+        "tenantId": null
+      },
+      {
+        "reference": "e82272e6-2486-4f9d-9f0e-1c667e0dc394",
+        "email": "Fabiola_Klocko92@gmail.com",
+        "firstName": "Judson",
+        "lastName": "Bruen",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/15628733",
+        "tenantId": null
+      },
+      {
+        "reference": "8f4cdce2-205f-487d-a58d-cfc85b2e0940",
+        "email": "Aidan_Graham70@yahoo.com",
+        "firstName": "Claude",
+        "lastName": "Friesen",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/642.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "ad5f233f-8dfc-4a40-bb28-b17a0d2c50de",
+        "email": "Fausto.Graham74@hotmail.com",
+        "firstName": "Emmitt",
+        "lastName": "Lockman-Heller",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/70727032",
+        "tenantId": null
+      },
+      {
+        "reference": "3f002276-72cf-4cdb-94bc-54c8f534deab",
+        "email": "Kaylah88@hotmail.com",
+        "firstName": "Ulices",
+        "lastName": "Wilderman",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/196.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "api": [
+      {
+        "id": "a0547e24-f5f5-4778-8311-e4efe2bf1d6c",
+        "name": "Weather API",
+        "format": "JSON",
+        "created_at": "2023-09-12T02:17:14.950Z",
+        "updated_at": "2023-09-11T20:26:07.490Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "96f5a626-e079-407a-90e0-50727f9c2d00",
+        "name": "Payment Gateway API",
+        "format": "XML",
+        "created_at": "2023-09-11T22:46:40.800Z",
+        "updated_at": "2023-09-12T09:07:30.216Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "829361a6-9c95-4f1c-8f96-f144640dd010",
+        "name": "Social Media API",
+        "format": "CSV",
+        "created_at": "2023-09-11T18:00:08.707Z",
+        "updated_at": "2023-09-11T23:06:58.058Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "b2c92861-56da-4c85-aec3-6d951f12e9d9",
+        "name": "Email Delivery API",
+        "format": "Protobuf",
+        "created_at": "2023-09-12T04:26:09.543Z",
+        "updated_at": "2023-09-12T08:38:13.293Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "930e445a-0c2c-4b2b-bbef-1b2666973917",
+        "name": "Geolocation API",
+        "format": "GraphQL",
+        "created_at": "2023-09-12T08:24:20.969Z",
+        "updated_at": "2023-09-11T21:13:05.273Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "test_run": [
+      {
+        "id": "1b25d9e6-0293-4684-92a6-4af27d2e6bf4",
+        "start_time": "2023-09-12T04:41:08.782Z",
+        "end_time": "2023-09-12T06:14:56.834Z",
+        "status": "Passed",
+        "created_at": "2023-09-11T11:34:36.555Z",
+        "updated_at": "2023-09-11T23:37:19.180Z",
+        "api_id": "b2c92861-56da-4c85-aec3-6d951f12e9d9",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c5eefca3-eeca-4de2-9ba7-7d5ff479630a",
+        "start_time": "2023-09-12T05:49:16.458Z",
+        "end_time": "2023-09-11T18:27:54.778Z",
+        "status": "Failed",
+        "created_at": "2023-09-11T09:44:19.948Z",
+        "updated_at": "2023-09-11T23:34:53.232Z",
+        "api_id": "a0547e24-f5f5-4778-8311-e4efe2bf1d6c",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b6ef521e-69be-4afd-ae2c-4318e4c67b0c",
+        "start_time": "2023-09-11T21:27:44.242Z",
+        "end_time": "2023-09-11T11:15:25.978Z",
+        "status": "Running",
+        "created_at": "2023-09-12T08:11:50.711Z",
+        "updated_at": "2023-09-12T05:15:38.113Z",
+        "api_id": "930e445a-0c2c-4b2b-bbef-1b2666973917",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "67cfa3e2-51ce-4a31-9aed-2eb10412be1f",
+        "start_time": "2023-09-12T03:59:22.868Z",
+        "end_time": "2023-09-12T03:45:25.333Z",
+        "status": "Pending",
+        "created_at": "2023-09-11T23:15:05.755Z",
+        "updated_at": "2023-09-11T21:13:45.603Z",
+        "api_id": "930e445a-0c2c-4b2b-bbef-1b2666973917",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "db843f4e-603f-48c9-87af-eca04c21ad80",
+        "start_time": "2023-09-12T00:18:44.307Z",
+        "end_time": "2023-09-12T04:33:17.016Z",
+        "status": "Skipped",
+        "created_at": "2023-09-11T14:56:17.228Z",
+        "updated_at": "2023-09-12T03:19:56.459Z",
+        "api_id": "b2c92861-56da-4c85-aec3-6d951f12e9d9",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "test_result": [
+      {
+        "id": "0b568393-8fbd-49ad-9f5d-5155289655d8",
+        "vulnerability": "SQL Injection",
+        "severity": "Critical",
+        "description": "The application is vulnerable to SQL injection attacks",
+        "created_at": "2023-09-12T03:25:54.979Z",
+        "updated_at": "2023-09-12T05:08:48.133Z",
+        "test_run_id": "b6ef521e-69be-4afd-ae2c-4318e4c67b0c"
+      },
+      {
+        "id": "a9b077b5-17c3-4705-8200-c8b1ac63b66e",
+        "vulnerability": "Cross-Site Scripting (XSS)",
+        "severity": "High",
+        "description": "Cross-Site Scripting (XSS) vulnerability found",
+        "created_at": "2023-09-11T14:26:46.960Z",
+        "updated_at": "2023-09-11T10:38:39.502Z",
+        "test_run_id": "c5eefca3-eeca-4de2-9ba7-7d5ff479630a"
+      },
+      {
+        "id": "326528bc-3402-4592-a9db-0f6ae917f58d",
+        "vulnerability": "Broken Authentication",
+        "severity": "Medium",
+        "description": "Authentication mechanism is not secure",
+        "created_at": "2023-09-12T00:35:15.543Z",
+        "updated_at": "2023-09-11T10:31:19.722Z",
+        "test_run_id": "c5eefca3-eeca-4de2-9ba7-7d5ff479630a"
+      },
+      {
+        "id": "01b3e82f-4949-479a-a140-e96e44949b21",
+        "vulnerability": "Sensitive Data Exposure",
+        "severity": "Low",
+        "description": "Sensitive data exposed in logs",
+        "created_at": "2023-09-11T17:21:09.485Z",
+        "updated_at": "2023-09-11T21:10:16.382Z",
+        "test_run_id": "1b25d9e6-0293-4684-92a6-4af27d2e6bf4"
+      },
+      {
+        "id": "f34f665f-a2cf-4cec-9447-43227dc3361e",
+        "vulnerability": "XML External Entity (XXE)",
+        "severity": "Informational",
+        "description": "XML External Entity (XXE) vulnerability detected",
+        "created_at": "2023-09-11T13:18:19.356Z",
+        "updated_at": "2023-09-12T07:30:28.120Z",
+        "test_run_id": "b6ef521e-69be-4afd-ae2c-4318e4c67b0c"
+      }
+    ],
+    "ci_cd_integration": [
+      {
+        "id": "608084f3-91e9-4107-b230-61930d184d83",
+        "name": "Jenkins",
+        "integration_type": "Continuous Integration",
+        "created_at": "2023-09-11T16:18:34.453Z",
+        "updated_at": "2023-09-12T09:22:23.324Z",
+        "api_id": "96f5a626-e079-407a-90e0-50727f9c2d00",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e3d2d2f6-5951-45a8-af5a-c22d1f4f4774",
+        "name": "Travis CI",
+        "integration_type": "Continuous Deployment",
+        "created_at": "2023-09-11T14:09:55.014Z",
+        "updated_at": "2023-09-11T16:41:56.960Z",
+        "api_id": "829361a6-9c95-4f1c-8f96-f144640dd010",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "31cddbee-08b5-40c3-8755-92eebac8678e",
+        "name": "CircleCI",
+        "integration_type": "Continuous Delivery",
+        "created_at": "2023-09-11T14:01:32.312Z",
+        "updated_at": "2023-09-12T09:15:04.429Z",
+        "api_id": "930e445a-0c2c-4b2b-bbef-1b2666973917",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a59d8f33-2389-480d-acc9-75a2cb697946",
+        "name": "GitLab CI/CD",
+        "integration_type": "Build Automation",
+        "created_at": "2023-09-11T09:50:53.388Z",
+        "updated_at": "2023-09-11T21:43:30.340Z",
+        "api_id": "930e445a-0c2c-4b2b-bbef-1b2666973917",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3d10defd-dba3-4afc-8fc3-ee2728f15e04",
+        "name": "Bamboo",
+        "integration_type": "Release Management",
+        "created_at": "2023-09-12T08:17:13.254Z",
+        "updated_at": "2023-09-12T00:57:38.055Z",
+        "api_id": "829361a6-9c95-4f1c-8f96-f144640dd010",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "33a050c4-a211-4b2b-9108-6c2fbeffdb4b",
+        "email": "Ezequiel_Hyatt78@yahoo.com",
+        "firstName": "Eli",
+        "lastName": "Rath",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/532.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9243779d-fc00-4dc1-a851-27fa91c646d2",
+        "email": "Erin_Johns2@gmail.com",
+        "firstName": "Zack",
+        "lastName": "Franecki",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/181.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "f5a6f1ec-19ad-4eed-81a2-c2318d06badb",
+        "email": "Jalen.Schultz41@hotmail.com",
+        "firstName": "Kadin",
+        "lastName": "Skiles",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/69963732",
+        "tenantId": null
+      },
+      {
+        "reference": "98c0838b-d7c9-47b9-be81-fc29df97eb0b",
+        "email": "Brionna30@hotmail.com",
+        "firstName": "Noemie",
+        "lastName": "Schamberger",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/36235901",
+        "tenantId": null
+      },
+      {
+        "reference": "091df613-ebc2-498f-b243-986f2e41d482",
+        "email": "Mustafa_Kub78@hotmail.com",
+        "firstName": "Jordyn",
+        "lastName": "Treutel",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/957.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "api": [
+      {
+        "id": "3d9346bf-829a-47a3-828e-e6c1de81786e",
+        "name": "Weather API",
+        "format": "JSON",
+        "created_at": "2023-09-12T08:11:14.082Z",
+        "updated_at": "2023-09-12T04:11:46.689Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "77e1976c-81a6-42b7-bc1c-7a3ee34d21d0",
+        "name": "Payment Gateway API",
+        "format": "XML",
+        "created_at": "2023-09-12T06:49:14.783Z",
+        "updated_at": "2023-09-12T04:21:20.106Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "bda3c872-0e85-440a-9af7-0d35fc53a549",
+        "name": "Social Media API",
+        "format": "CSV",
+        "created_at": "2023-09-11T22:19:47.444Z",
+        "updated_at": "2023-09-11T13:39:00.850Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "c02a10ec-0499-4b55-8402-612db24dcb46",
+        "name": "Email Delivery API",
+        "format": "Protobuf",
+        "created_at": "2023-09-12T00:02:15.662Z",
+        "updated_at": "2023-09-11T13:58:38.931Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "81b5632f-ded7-42f4-bdc0-924d4743b569",
+        "name": "Geolocation API",
+        "format": "GraphQL",
+        "created_at": "2023-09-11T23:46:26.323Z",
+        "updated_at": "2023-09-11T22:39:39.122Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "test_run": [
+      {
+        "id": "a10669ba-0417-4abb-b377-828390e5a13f",
+        "start_time": "2023-09-11T18:02:23.318Z",
+        "end_time": "2023-09-11T23:14:12.258Z",
+        "status": "Passed",
+        "created_at": "2023-09-12T08:03:08.125Z",
+        "updated_at": "2023-09-11T19:37:15.147Z",
+        "api_id": "3d9346bf-829a-47a3-828e-e6c1de81786e",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5082ae1b-20fe-413f-a6a4-44ebb949e191",
+        "start_time": "2023-09-11T18:10:21.699Z",
+        "end_time": "2023-09-11T20:15:46.359Z",
+        "status": "Failed",
+        "created_at": "2023-09-11T10:06:37.392Z",
+        "updated_at": "2023-09-11T11:08:13.088Z",
+        "api_id": "bda3c872-0e85-440a-9af7-0d35fc53a549",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5696642f-bab5-48f1-b813-73e0915c0469",
+        "start_time": "2023-09-11T21:49:40.590Z",
+        "end_time": "2023-09-12T08:05:19.236Z",
+        "status": "Pending",
+        "created_at": "2023-09-11T11:58:35.640Z",
+        "updated_at": "2023-09-11T12:13:04.357Z",
+        "api_id": "77e1976c-81a6-42b7-bc1c-7a3ee34d21d0",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "823e9839-0831-4d18-bf0e-26b64e89166c",
+        "start_time": "2023-09-12T08:56:52.311Z",
+        "end_time": "2023-09-11T14:15:28.591Z",
+        "status": "Skipped",
+        "created_at": "2023-09-12T07:48:41.805Z",
+        "updated_at": "2023-09-11T15:32:32.539Z",
+        "api_id": "3d9346bf-829a-47a3-828e-e6c1de81786e",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "54f23d5c-8993-41e3-9e13-aa64cec21a09",
+        "start_time": "2023-09-11T21:13:29.344Z",
+        "end_time": "2023-09-11T15:11:24.347Z",
+        "status": "Aborted",
+        "created_at": "2023-09-11T16:47:06.458Z",
+        "updated_at": "2023-09-12T02:30:44.461Z",
+        "api_id": "c02a10ec-0499-4b55-8402-612db24dcb46",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "test_result": [
+      {
+        "id": "87ec92f9-f144-4036-a42a-f92d0cf4fe8a",
+        "vulnerability": "SQL Injection",
+        "severity": "Critical",
+        "description": "This vulnerability allows an attacker to execute arbitrary SQL queries.",
+        "created_at": "2023-09-12T04:20:11.111Z",
+        "updated_at": "2023-09-12T06:15:22.964Z",
+        "test_run_id": "54f23d5c-8993-41e3-9e13-aa64cec21a09"
+      },
+      {
+        "id": "207167ff-8da5-45d4-a0ab-4a81cce25f89",
+        "vulnerability": "Cross-Site Scripting (XSS)",
+        "severity": "High",
+        "description": "This vulnerability allows an attacker to inject malicious scripts into web pages.",
+        "created_at": "2023-09-12T02:31:24.550Z",
+        "updated_at": "2023-09-12T01:16:51.598Z",
+        "test_run_id": "5082ae1b-20fe-413f-a6a4-44ebb949e191"
+      },
+      {
+        "id": "8a96750a-b045-4400-bd9b-d88cbad86e8d",
+        "vulnerability": "Remote Code Execution",
+        "severity": "Medium",
+        "description": "This vulnerability allows an attacker to execute arbitrary code remotely.",
+        "created_at": "2023-09-12T01:11:33.601Z",
+        "updated_at": "2023-09-12T05:12:52.137Z",
+        "test_run_id": "823e9839-0831-4d18-bf0e-26b64e89166c"
+      },
+      {
+        "id": "8eba6c46-3ef4-4660-a5bd-6027398ae782",
+        "vulnerability": "Broken Authentication",
+        "severity": "Low",
+        "description": "This vulnerability allows unauthorized access to user accounts.",
+        "created_at": "2023-09-11T14:24:34.763Z",
+        "updated_at": "2023-09-12T05:56:32.457Z",
+        "test_run_id": "54f23d5c-8993-41e3-9e13-aa64cec21a09"
+      },
+      {
+        "id": "36406578-e092-46a6-b70c-27d59464064c",
+        "vulnerability": "Sensitive Data Exposure",
+        "severity": "Informational",
+        "description": "This vulnerability exposes sensitive data such as passwords or credit card information.",
+        "created_at": "2023-09-11T21:49:45.109Z",
+        "updated_at": "2023-09-12T02:54:51.767Z",
+        "test_run_id": "a10669ba-0417-4abb-b377-828390e5a13f"
+      }
+    ],
+    "ci_cd_integration": [
+      {
+        "id": "5277e7b6-e791-4b59-a5db-53bef820746c",
+        "name": "Jenkins",
+        "integration_type": "Continuous Integration",
+        "created_at": "2023-09-11T11:27:28.666Z",
+        "updated_at": "2023-09-11T15:57:23.943Z",
+        "api_id": "c02a10ec-0499-4b55-8402-612db24dcb46",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "65f5aa58-5ac4-4778-b818-6f84839f35fc",
+        "name": "Travis CI",
+        "integration_type": "Continuous Delivery",
+        "created_at": "2023-09-12T06:02:34.894Z",
+        "updated_at": "2023-09-12T08:36:52.678Z",
+        "api_id": "3d9346bf-829a-47a3-828e-e6c1de81786e",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0fa0ae79-81b1-4b98-bf95-e3547683658b",
+        "name": "CircleCI",
+        "integration_type": "Continuous Deployment",
+        "created_at": "2023-09-11T16:38:32.394Z",
+        "updated_at": "2023-09-11T15:59:10.402Z",
+        "api_id": "c02a10ec-0499-4b55-8402-612db24dcb46",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "8b660aa0-fd49-4839-8d99-f013c4e5df57",
+        "name": "GitLab CI/CD",
+        "integration_type": "Build Automation",
+        "created_at": "2023-09-11T19:03:04.908Z",
+        "updated_at": "2023-09-12T01:40:22.142Z",
+        "api_id": "bda3c872-0e85-440a-9af7-0d35fc53a549",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "82eca9c3-618c-4c12-a9ac-9a60af1e33d0",
+        "name": "GitHub Actions",
+        "integration_type": "Test Automation",
+        "created_at": "2023-09-11T13:43:35.916Z",
+        "updated_at": "2023-09-12T02:42:19.361Z",
+        "api_id": "c02a10ec-0499-4b55-8402-612db24dcb46",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "958cde72-89e6-476d-a324-ec2221246399",
+        "email": "Sylvan_Dickens49@hotmail.com",
+        "firstName": "Dejah",
+        "lastName": "Breitenberg",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/128.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "7ebb033b-c829-4e56-9fc8-42bf096a5650",
+        "email": "Sandy.Howell@gmail.com",
+        "firstName": "Tiana",
+        "lastName": "Lowe",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/905.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "697b164b-daf7-4970-9590-9870791e2bf6",
+        "email": "Celia_Bahringer89@yahoo.com",
+        "firstName": "Fredy",
+        "lastName": "Koepp",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/86187121",
+        "tenantId": null
+      },
+      {
+        "reference": "caf97413-5dd4-4f18-81fb-6a9e901214ee",
+        "email": "Velda99@gmail.com",
+        "firstName": "Wayne",
+        "lastName": "Jacobs",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1066.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "94e5d387-1911-40c5-9a3e-1dbbb0a04590",
+        "email": "Korey_Kuhlman@gmail.com",
+        "firstName": "Ramona",
+        "lastName": "Ullrich",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/904.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "api": [
+      {
+        "id": "d192a327-e569-4111-ba9c-7d535ce62be7",
+        "name": "Weather API",
+        "format": "JSON",
+        "created_at": "2023-09-11T11:44:14.992Z",
+        "updated_at": "2023-09-12T01:39:40.316Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "a885acdf-b9c2-46bb-861e-768efc01d36b",
+        "name": "Payment Gateway API",
+        "format": "XML",
+        "created_at": "2023-09-12T01:31:52.387Z",
+        "updated_at": "2023-09-11T16:56:15.679Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "38722e60-1364-4f88-bf2b-50325d03148d",
+        "name": "Social Media API",
+        "format": "CSV",
+        "created_at": "2023-09-11T13:39:04.175Z",
+        "updated_at": "2023-09-11T10:47:58.847Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "b3a5ac8b-3271-4a87-9374-22307201ad76",
+        "name": "E-commerce API",
+        "format": "GraphQL",
+        "created_at": "2023-09-12T01:12:56.609Z",
+        "updated_at": "2023-09-12T03:16:00.306Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "dfedf94a-78d8-4526-a3cc-9f3ad7ad29d8",
+        "name": "Analytics API",
+        "format": "SOAP",
+        "created_at": "2023-09-11T18:00:27.650Z",
+        "updated_at": "2023-09-12T02:18:30.437Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "test_run": [
+      {
+        "id": "0a03c6b4-c825-4a46-bf80-6da2db8fc342",
+        "start_time": "2023-09-11T21:44:50.232Z",
+        "end_time": "2023-09-12T01:39:02.496Z",
+        "status": "Passed",
+        "created_at": "2023-09-11T14:39:58.030Z",
+        "updated_at": "2023-09-11T11:51:34.778Z",
+        "api_id": "dfedf94a-78d8-4526-a3cc-9f3ad7ad29d8",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4f692cdc-823e-443b-8505-6e5621086be7",
+        "start_time": "2023-09-12T06:23:25.292Z",
+        "end_time": "2023-09-11T17:37:35.502Z",
+        "status": "Failed",
+        "created_at": "2023-09-11T16:14:57.370Z",
+        "updated_at": "2023-09-12T08:04:02.685Z",
+        "api_id": "38722e60-1364-4f88-bf2b-50325d03148d",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "fdcea95f-1a09-4bec-a5ce-3250530ee58b",
+        "start_time": "2023-09-11T22:04:25.838Z",
+        "end_time": "2023-09-12T01:05:02.389Z",
+        "status": "Running",
+        "created_at": "2023-09-12T08:44:07.504Z",
+        "updated_at": "2023-09-11T11:41:30.240Z",
+        "api_id": "38722e60-1364-4f88-bf2b-50325d03148d",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "967ba8d9-3042-447d-9952-3d2e9622e624",
+        "start_time": "2023-09-11T19:30:45.071Z",
+        "end_time": "2023-09-12T04:57:36.030Z",
+        "status": "Pending",
+        "created_at": "2023-09-12T08:10:56.093Z",
+        "updated_at": "2023-09-12T01:24:28.977Z",
+        "api_id": "38722e60-1364-4f88-bf2b-50325d03148d",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ec2b39ee-a39b-4ae5-97c3-3d7186042edd",
+        "start_time": "2023-09-11T22:58:02.896Z",
+        "end_time": "2023-09-12T00:05:51.915Z",
+        "status": "Skipped",
+        "created_at": "2023-09-11T11:05:03.164Z",
+        "updated_at": "2023-09-11T11:12:27.609Z",
+        "api_id": "38722e60-1364-4f88-bf2b-50325d03148d",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "test_result": [
+      {
+        "id": "109c8ade-2f6e-4289-8d71-4e53785c908c",
+        "vulnerability": "Cross-site scripting (XSS)",
+        "severity": "High",
+        "description": "The vulnerability allows an attacker to execute arbitrary code.",
+        "created_at": "2023-09-12T05:49:05.197Z",
+        "updated_at": "2023-09-12T05:45:13.337Z",
+        "test_run_id": "0a03c6b4-c825-4a46-bf80-6da2db8fc342"
+      },
+      {
+        "id": "20650dcd-6635-4f85-8f69-f758ba45567a",
+        "vulnerability": "SQL injection",
+        "severity": "Medium",
+        "description": "The vulnerability allows unauthorized access to sensitive data.",
+        "created_at": "2023-09-12T08:04:18.393Z",
+        "updated_at": "2023-09-12T05:36:07.480Z",
+        "test_run_id": "4f692cdc-823e-443b-8505-6e5621086be7"
+      },
+      {
+        "id": "177cf42e-51aa-44f3-ba7a-daed61f053df",
+        "vulnerability": "Remote code execution",
+        "severity": "Low",
+        "description": "The vulnerability causes the application to crash.",
+        "created_at": "2023-09-11T10:41:19.287Z",
+        "updated_at": "2023-09-11T19:43:58.745Z",
+        "test_run_id": "fdcea95f-1a09-4bec-a5ce-3250530ee58b"
+      },
+      {
+        "id": "326fa4e1-2dc4-4b55-9d47-26c87955716d",
+        "vulnerability": "Information disclosure",
+        "severity": "Critical",
+        "description": "The vulnerability exposes internal system information.",
+        "created_at": "2023-09-11T10:14:40.476Z",
+        "updated_at": "2023-09-11T23:04:48.420Z",
+        "test_run_id": "4f692cdc-823e-443b-8505-6e5621086be7"
+      },
+      {
+        "id": "5fc23246-e31f-4cf7-ac8a-b12e250666de",
+        "vulnerability": "Denial of service (DoS)",
+        "severity": "Informational",
+        "description": "The vulnerability allows an attacker to bypass authentication.",
+        "created_at": "2023-09-12T03:49:49.993Z",
+        "updated_at": "2023-09-12T06:42:52.791Z",
+        "test_run_id": "fdcea95f-1a09-4bec-a5ce-3250530ee58b"
+      }
+    ],
+    "ci_cd_integration": [
+      {
+        "id": "d09269e3-6f40-4883-8b6a-9a3a37c65fa8",
+        "name": "Jenkins",
+        "integration_type": "Continuous Integration",
+        "created_at": "2023-09-12T02:18:38.024Z",
+        "updated_at": "2023-09-11T19:06:20.640Z",
+        "api_id": "38722e60-1364-4f88-bf2b-50325d03148d",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9c0ab083-e98b-42c4-adb8-5f46966b2d2e",
+        "name": "Travis CI",
+        "integration_type": "Continuous Delivery",
+        "created_at": "2023-09-12T02:26:57.948Z",
+        "updated_at": "2023-09-11T19:40:20.359Z",
+        "api_id": "b3a5ac8b-3271-4a87-9374-22307201ad76",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "47e0479c-a657-41c9-8dde-45bb63758d88",
+        "name": "CircleCI",
+        "integration_type": "Continuous Deployment",
+        "created_at": "2023-09-11T16:51:35.308Z",
+        "updated_at": "2023-09-11T23:40:33.081Z",
+        "api_id": "d192a327-e569-4111-ba9c-7d535ce62be7",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "41c4e1e0-1dbc-46cf-a660-3ff2fcd331b0",
+        "name": "GitLab CI/CD",
+        "integration_type": "Build Automation",
+        "created_at": "2023-09-11T17:36:40.201Z",
+        "updated_at": "2023-09-12T07:36:05.092Z",
+        "api_id": "dfedf94a-78d8-4526-a3cc-9f3ad7ad29d8",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "7038091d-e1a0-4ca2-be87-8a1a09c945f8",
+        "name": "Bitbucket Pipelines",
+        "integration_type": "Release Management",
+        "created_at": "2023-09-12T05:20:50.581Z",
+        "updated_at": "2023-09-11T18:48:05.328Z",
+        "api_id": "dfedf94a-78d8-4526-a3cc-9f3ad7ad29d8",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "1fca4b95-439f-42f4-968b-e5d72d0fae5a",
+        "email": "Brooke5@gmail.com",
+        "firstName": "Macey",
+        "lastName": "Rau",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1207.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "3359154f-9eab-4a45-8976-fb2f2cc30764",
+        "email": "Bart_Ortiz18@yahoo.com",
+        "firstName": "Judah",
+        "lastName": "Rosenbaum",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/564.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "2eedcdac-436f-4598-ad2b-a2ba2554e40d",
+        "email": "Breanne.Zboncak-Maggio72@gmail.com",
+        "firstName": "Wellington",
+        "lastName": "Schmidt",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/33203690",
+        "tenantId": null
+      },
+      {
+        "reference": "dd81605a-480b-4329-bff4-3f305a98b990",
+        "email": "Oda27@hotmail.com",
+        "firstName": "Sibyl",
+        "lastName": "Collins",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/66263284",
+        "tenantId": null
+      },
+      {
+        "reference": "9653caf8-cf77-4637-a24d-6dcf0b3c6734",
+        "email": "Jeromy.Wiza45@yahoo.com",
+        "firstName": "Modesto",
+        "lastName": "Blick",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/864.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "api": [
+      {
+        "id": "42b565af-6ee1-4d7d-9326-838726312235",
+        "name": "Weather API",
+        "format": "JSON",
+        "created_at": "2023-09-12T07:23:15.376Z",
+        "updated_at": "2023-09-12T02:48:54.612Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "c10448e9-3afd-4a61-8756-243ce352d3d0",
+        "name": "Payment Gateway API",
+        "format": "XML",
+        "created_at": "2023-09-12T06:33:20.360Z",
+        "updated_at": "2023-09-12T08:39:53.897Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "a0247f2f-342c-419c-b03f-1d1883eeb9c7",
+        "name": "Social Media API",
+        "format": "CSV",
+        "created_at": "2023-09-11T18:16:37.671Z",
+        "updated_at": "2023-09-11T15:34:19.085Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "2d3ec64c-52a2-48a0-804a-88b319f59c97",
+        "name": "Email Service API",
+        "format": "Protobuf",
+        "created_at": "2023-09-12T00:27:33.883Z",
+        "updated_at": "2023-09-12T06:20:23.620Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "6652c48c-a11d-48fb-81d2-be14672baa19",
+        "name": "Geolocation API",
+        "format": "GraphQL",
+        "created_at": "2023-09-11T10:36:27.872Z",
+        "updated_at": "2023-09-12T00:00:19.420Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "test_run": [
+      {
+        "id": "7b8a7698-beba-40da-aec7-8ad182b63840",
+        "start_time": "2023-09-12T07:04:53.706Z",
+        "end_time": "2023-09-11T21:34:50.864Z",
+        "status": "Passed",
+        "created_at": "2023-09-11T22:03:36.208Z",
+        "updated_at": "2023-09-12T02:41:44.039Z",
+        "api_id": "c10448e9-3afd-4a61-8756-243ce352d3d0",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "85ef6154-3c8a-4709-85f6-651d56281170",
+        "start_time": "2023-09-12T05:21:13.021Z",
+        "end_time": "2023-09-12T07:26:40.782Z",
+        "status": "Failed",
+        "created_at": "2023-09-11T20:54:34.597Z",
+        "updated_at": "2023-09-11T10:28:12.705Z",
+        "api_id": "2d3ec64c-52a2-48a0-804a-88b319f59c97",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a0299bab-4e5b-41b3-9900-8442f7bb4027",
+        "start_time": "2023-09-11T20:24:58.147Z",
+        "end_time": "2023-09-12T06:27:54.413Z",
+        "status": "Pending",
+        "created_at": "2023-09-11T17:25:15.742Z",
+        "updated_at": "2023-09-12T08:34:57.733Z",
+        "api_id": "2d3ec64c-52a2-48a0-804a-88b319f59c97",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "432b981b-c4fc-401a-96a4-b6bbc54dc3ce",
+        "start_time": "2023-09-12T07:41:53.448Z",
+        "end_time": "2023-09-11T21:28:59.741Z",
+        "status": "Running",
+        "created_at": "2023-09-12T02:13:13.078Z",
+        "updated_at": "2023-09-11T23:58:19.542Z",
+        "api_id": "c10448e9-3afd-4a61-8756-243ce352d3d0",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "449fadcd-e916-4e82-bc33-19183d2189fe",
+        "start_time": "2023-09-11T15:05:24.787Z",
+        "end_time": "2023-09-11T11:27:53.841Z",
+        "status": "Skipped",
+        "created_at": "2023-09-11T11:38:18.986Z",
+        "updated_at": "2023-09-11T22:46:25.696Z",
+        "api_id": "6652c48c-a11d-48fb-81d2-be14672baa19",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "test_result": [
+      {
+        "id": "523c806b-df88-41b7-9911-c48c7996c1b8",
+        "vulnerability": "SQL Injection",
+        "severity": "Critical",
+        "description": "This vulnerability allows an attacker to execute arbitrary SQL queries.",
+        "created_at": "2023-09-11T11:03:22.605Z",
+        "updated_at": "2023-09-11T22:16:38.786Z",
+        "test_run_id": "449fadcd-e916-4e82-bc33-19183d2189fe"
+      },
+      {
+        "id": "0ef1a1e8-6944-4206-9106-f94d81920f68",
+        "vulnerability": "Cross-Site Scripting (XSS)",
+        "severity": "High",
+        "description": "This vulnerability allows an attacker to inject malicious scripts into web pages.",
+        "created_at": "2023-09-11T11:50:16.853Z",
+        "updated_at": "2023-09-11T16:28:31.283Z",
+        "test_run_id": "432b981b-c4fc-401a-96a4-b6bbc54dc3ce"
+      },
+      {
+        "id": "8bf9a442-95b5-4087-b3aa-b3735b49e045",
+        "vulnerability": "Broken Authentication",
+        "severity": "Medium",
+        "description": "This vulnerability allows an attacker to bypass authentication mechanisms.",
+        "created_at": "2023-09-11T18:04:25.368Z",
+        "updated_at": "2023-09-11T22:46:14.635Z",
+        "test_run_id": "432b981b-c4fc-401a-96a4-b6bbc54dc3ce"
+      },
+      {
+        "id": "20f5e48d-e2ec-4db5-bbdb-c7215639fbba",
+        "vulnerability": "Sensitive Data Exposure",
+        "severity": "Low",
+        "description": "This vulnerability exposes sensitive data such as passwords or credit card information.",
+        "created_at": "2023-09-12T01:56:39.299Z",
+        "updated_at": "2023-09-11T15:53:12.696Z",
+        "test_run_id": "432b981b-c4fc-401a-96a4-b6bbc54dc3ce"
+      },
+      {
+        "id": "add12f0c-538f-4397-816b-28acc8c90444",
+        "vulnerability": "XML External Entity (XXE)",
+        "severity": "Informational",
+        "description": "This vulnerability allows an attacker to read files from the server or internal network.",
+        "created_at": "2023-09-12T01:58:17.320Z",
+        "updated_at": "2023-09-11T23:49:38.836Z",
+        "test_run_id": "a0299bab-4e5b-41b3-9900-8442f7bb4027"
+      }
+    ],
+    "ci_cd_integration": [
+      {
+        "id": "64dcfb98-5b1c-4bc0-914d-340062b07c59",
+        "name": "Jenkins",
+        "integration_type": "Continuous Integration",
+        "created_at": "2023-09-11T20:13:51.264Z",
+        "updated_at": "2023-09-11T18:08:42.655Z",
+        "api_id": "a0247f2f-342c-419c-b03f-1d1883eeb9c7",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "babdf273-c989-4f9c-9982-9e759cfebfe7",
+        "name": "CircleCI",
+        "integration_type": "Continuous Deployment",
+        "created_at": "2023-09-11T23:03:39.401Z",
+        "updated_at": "2023-09-11T10:28:46.887Z",
+        "api_id": "a0247f2f-342c-419c-b03f-1d1883eeb9c7",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0f3726a9-a246-4b69-beda-967440732b92",
+        "name": "Travis CI",
+        "integration_type": "Continuous Delivery",
+        "created_at": "2023-09-12T01:50:46.839Z",
+        "updated_at": "2023-09-12T04:16:53.869Z",
+        "api_id": "c10448e9-3afd-4a61-8756-243ce352d3d0",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "83802e5a-559e-4e43-8d6b-ef5af7dcb2ee",
+        "name": "GitLab CI/CD",
+        "integration_type": "Build Automation",
+        "created_at": "2023-09-11T14:06:43.694Z",
+        "updated_at": "2023-09-12T02:23:31.400Z",
+        "api_id": "2d3ec64c-52a2-48a0-804a-88b319f59c97",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9af0231a-9e99-4763-91e1-d7270a088903",
+        "name": "Bitbucket Pipelines",
+        "integration_type": "Test Automation",
+        "created_at": "2023-09-11T11:50:23.199Z",
+        "updated_at": "2023-09-12T07:51:29.465Z",
+        "api_id": "c10448e9-3afd-4a61-8756-243ce352d3d0",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "2a728538-57f0-4176-9b76-ace49df63a47",
+        "email": "Oceane19@hotmail.com",
+        "firstName": "Derek",
+        "lastName": "Paucek",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/64001930",
+        "tenantId": null
+      },
+      {
+        "reference": "f6585376-36b5-453e-aa56-4adb0b73bfc9",
+        "email": "Juanita7@hotmail.com",
+        "firstName": "Kristofer",
+        "lastName": "Tillman",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1097.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9cf31fd4-e33a-43ff-990d-21146b64832d",
+        "email": "Marc.Kub7@gmail.com",
+        "firstName": "Pansy",
+        "lastName": "Kilback",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/9808032",
+        "tenantId": null
+      },
+      {
+        "reference": "fbfc81b3-0348-4826-b1cc-48e7631b490b",
+        "email": "Jaquan.Kassulke88@yahoo.com",
+        "firstName": "Maritza",
+        "lastName": "Wisozk",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/581.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "5ef165e8-1b2c-45ed-a56e-e10cfec73382",
+        "email": "Stanley_Glover@yahoo.com",
+        "firstName": "Stanton",
+        "lastName": "Jerde",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5762536",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "api": [
+      {
+        "id": "303d51ac-df60-43b0-a69f-1eb5f972def0",
+        "name": "Weather API",
+        "format": "JSON",
+        "created_at": "2023-09-12T06:53:07.657Z",
+        "updated_at": "2023-09-11T18:37:46.402Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "c196d349-d1d0-48ee-a244-30971cfa02f6",
+        "name": "Payment Gateway API",
+        "format": "XML",
+        "created_at": "2023-09-12T01:51:03.976Z",
+        "updated_at": "2023-09-11T11:25:33.306Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "e8960227-97c4-401d-8c1a-e4b8990ffb59",
+        "name": "Social Media API",
+        "format": "CSV",
+        "created_at": "2023-09-11T13:12:32.178Z",
+        "updated_at": "2023-09-12T01:53:18.161Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "84553503-46a9-4824-9688-2e551b3adeed",
+        "name": "Email Delivery API",
+        "format": "Protobuf",
+        "created_at": "2023-09-11T23:26:10.965Z",
+        "updated_at": "2023-09-11T21:44:16.498Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "eaaffa37-2361-467a-8001-a580d003f8e8",
+        "name": "Geolocation API",
+        "format": "GraphQL",
+        "created_at": "2023-09-12T06:38:56.386Z",
+        "updated_at": "2023-09-11T15:56:44.404Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "test_run": [
+      {
+        "id": "9d6329e7-2a5f-473c-b31f-3fc11d9f617f",
+        "start_time": "2023-09-11T22:19:36.470Z",
+        "end_time": "2023-09-11T12:14:46.555Z",
+        "status": "Passed",
+        "created_at": "2023-09-11T15:47:55.311Z",
+        "updated_at": "2023-09-11T11:43:14.778Z",
+        "api_id": "c196d349-d1d0-48ee-a244-30971cfa02f6",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ca01c15a-97c4-4695-a543-fafab74eb91d",
+        "start_time": "2023-09-12T02:45:10.552Z",
+        "end_time": "2023-09-12T03:46:07.521Z",
+        "status": "Failed",
+        "created_at": "2023-09-11T16:19:06.703Z",
+        "updated_at": "2023-09-11T16:24:30.029Z",
+        "api_id": "c196d349-d1d0-48ee-a244-30971cfa02f6",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c403bf9f-4e85-47e4-a765-7ad5b9b8669d",
+        "start_time": "2023-09-12T01:05:35.487Z",
+        "end_time": "2023-09-12T00:29:50.341Z",
+        "status": "Running",
+        "created_at": "2023-09-12T01:07:17.762Z",
+        "updated_at": "2023-09-12T05:16:19.525Z",
+        "api_id": "303d51ac-df60-43b0-a69f-1eb5f972def0",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3fa505fa-940b-4d6b-a8de-8430ca2213da",
+        "start_time": "2023-09-12T07:39:35.077Z",
+        "end_time": "2023-09-11T10:10:17.938Z",
+        "status": "Pending",
+        "created_at": "2023-09-11T12:39:29.709Z",
+        "updated_at": "2023-09-12T07:32:09.370Z",
+        "api_id": "e8960227-97c4-401d-8c1a-e4b8990ffb59",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "91aa011c-5557-42ad-911d-f0455fe04fd1",
+        "start_time": "2023-09-11T18:28:29.558Z",
+        "end_time": "2023-09-12T08:16:03.510Z",
+        "status": "Skipped",
+        "created_at": "2023-09-11T23:35:49.834Z",
+        "updated_at": "2023-09-11T09:48:34.968Z",
+        "api_id": "303d51ac-df60-43b0-a69f-1eb5f972def0",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "test_result": [
+      {
+        "id": "90dfffac-16e3-4dd3-8cf2-3611725db027",
+        "vulnerability": "SQL Injection",
+        "severity": "High",
+        "description": "This vulnerability allows an attacker to execute arbitrary SQL queries.",
+        "created_at": "2023-09-11T16:28:12.189Z",
+        "updated_at": "2023-09-12T03:07:49.826Z",
+        "test_run_id": "ca01c15a-97c4-4695-a543-fafab74eb91d"
+      },
+      {
+        "id": "b38a5518-9cb0-4c23-9025-b0d801c43a4c",
+        "vulnerability": "Cross-Site Scripting (XSS)",
+        "severity": "Medium",
+        "description": "This vulnerability allows an attacker to inject malicious scripts into web pages.",
+        "created_at": "2023-09-12T04:42:52.727Z",
+        "updated_at": "2023-09-11T21:41:48.381Z",
+        "test_run_id": "91aa011c-5557-42ad-911d-f0455fe04fd1"
+      },
+      {
+        "id": "49a6810b-773c-41a5-9949-895b002d4bb6",
+        "vulnerability": "Remote Code Execution",
+        "severity": "Low",
+        "description": "This vulnerability allows an attacker to execute arbitrary code remotely.",
+        "created_at": "2023-09-11T21:15:34.006Z",
+        "updated_at": "2023-09-11T10:47:37.708Z",
+        "test_run_id": "c403bf9f-4e85-47e4-a765-7ad5b9b8669d"
+      },
+      {
+        "id": "c9916149-f6c8-4761-8b07-188eede0d150",
+        "vulnerability": "Insecure Direct Object References",
+        "severity": "Critical",
+        "description": "This vulnerability allows an attacker to access unauthorized resources.",
+        "created_at": "2023-09-11T13:05:50.790Z",
+        "updated_at": "2023-09-11T23:14:58.876Z",
+        "test_run_id": "91aa011c-5557-42ad-911d-f0455fe04fd1"
+      },
+      {
+        "id": "b1761972-535e-4a71-844e-3c39af9da506",
+        "vulnerability": "Cross-Site Request Forgery (CSRF)",
+        "severity": "Informational",
+        "description": "This vulnerability allows an attacker to perform actions on behalf of a user.",
+        "created_at": "2023-09-11T19:29:15.358Z",
+        "updated_at": "2023-09-11T10:23:08.461Z",
+        "test_run_id": "ca01c15a-97c4-4695-a543-fafab74eb91d"
+      }
+    ],
+    "ci_cd_integration": [
+      {
+        "id": "4c474618-4965-4823-b5b4-acae0e08b984",
+        "name": "Jenkins",
+        "integration_type": "Continuous Integration",
+        "created_at": "2023-09-12T08:57:28.189Z",
+        "updated_at": "2023-09-12T06:00:06.372Z",
+        "api_id": "84553503-46a9-4824-9688-2e551b3adeed",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "1a30b0c3-264c-490b-8f84-befee4e25432",
+        "name": "Travis CI",
+        "integration_type": "Continuous Deployment",
+        "created_at": "2023-09-12T07:14:02.796Z",
+        "updated_at": "2023-09-11T16:49:56.601Z",
+        "api_id": "84553503-46a9-4824-9688-2e551b3adeed",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ea34e88c-751e-4862-8fbe-738387b095fd",
+        "name": "CircleCI",
+        "integration_type": "Continuous Delivery",
+        "created_at": "2023-09-11T13:14:25.456Z",
+        "updated_at": "2023-09-11T19:08:39.921Z",
+        "api_id": "e8960227-97c4-401d-8c1a-e4b8990ffb59",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d63a64ae-c35f-447c-9d9e-1ab7e03e882d",
+        "name": "GitLab CI/CD",
+        "integration_type": "Build Automation",
+        "created_at": "2023-09-11T18:11:19.598Z",
+        "updated_at": "2023-09-12T05:21:11.346Z",
+        "api_id": "c196d349-d1d0-48ee-a244-30971cfa02f6",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a5124568-196c-4372-b7b0-a6ac85f7fc49",
+        "name": "Bitbucket Pipelines",
+        "integration_type": "Source Code Management",
+        "created_at": "2023-09-12T08:13:36.751Z",
+        "updated_at": "2023-09-12T05:10:43.694Z",
+        "api_id": "eaaffa37-2361-467a-8001-a580d003f8e8",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "e3e49d32-b111-4720-8e5d-9dcefb2586df",
+        "email": "Adelbert_Hansen91@hotmail.com",
+        "firstName": "Moses",
+        "lastName": "Kuhlman",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/50618391",
+        "tenantId": null
+      },
+      {
+        "reference": "26379f69-1574-487a-b14d-d9dbf3dae001",
+        "email": "Hollie26@hotmail.com",
+        "firstName": "Ava",
+        "lastName": "Kub",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/486.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d88b1b85-b8ef-41e9-9178-a06389391454",
+        "email": "Simeon99@gmail.com",
+        "firstName": "Norberto",
+        "lastName": "Cole",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4827378",
+        "tenantId": null
+      },
+      {
+        "reference": "9126cf61-4a3e-453f-a473-fce1a1ae0149",
+        "email": "Lottie.Davis@yahoo.com",
+        "firstName": "Bernardo",
+        "lastName": "Dibbert",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1003.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "92fd66b4-21a6-41af-a09c-c1fe8d6bad20",
+        "email": "Uriel_Bergnaum-Reilly@gmail.com",
+        "firstName": "Xzavier",
+        "lastName": "Stanton",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/37220219",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "api": [
+      {
+        "id": "a6630959-5147-41e2-a262-3ec05b2eb7c3",
+        "name": "Weather API",
+        "format": "JSON",
+        "created_at": "2023-09-11T15:39:19.722Z",
+        "updated_at": "2023-09-11T19:20:16.348Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "d1795b4f-343e-49c1-aa58-7e514bb3de03",
+        "name": "Payment Gateway API",
+        "format": "XML",
+        "created_at": "2023-09-11T16:26:07.219Z",
+        "updated_at": "2023-09-11T14:00:43.850Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "b2d79e86-f2dd-46aa-8590-b33bbeae6cf3",
+        "name": "Social Media API",
+        "format": "CSV",
+        "created_at": "2023-09-11T22:06:52.364Z",
+        "updated_at": "2023-09-11T19:05:19.468Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "ac67df56-2ed2-43c9-9e73-bfd6ef47b434",
+        "name": "Email Service API",
+        "format": "GraphQL",
+        "created_at": "2023-09-11T21:39:42.716Z",
+        "updated_at": "2023-09-12T03:34:31.480Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "970fcf42-1c24-4106-8814-797c999aecf9",
+        "name": "Maps API",
+        "format": "Protobuf",
+        "created_at": "2023-09-11T13:10:41.152Z",
+        "updated_at": "2023-09-11T22:55:35.082Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "test_run": [
+      {
+        "id": "c2a7714a-1387-4305-813a-25d822bfc1cd",
+        "start_time": "2023-09-11T17:34:01.001Z",
+        "end_time": "2023-09-11T22:05:23.999Z",
+        "status": "Passed",
+        "created_at": "2023-09-11T19:52:09.233Z",
+        "updated_at": "2023-09-11T23:42:54.267Z",
+        "api_id": "d1795b4f-343e-49c1-aa58-7e514bb3de03",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "6387ae4d-de54-445e-b2cb-30937329b932",
+        "start_time": "2023-09-11T10:46:29.865Z",
+        "end_time": "2023-09-11T22:02:32.237Z",
+        "status": "Failed",
+        "created_at": "2023-09-11T10:12:40.271Z",
+        "updated_at": "2023-09-12T00:42:08.720Z",
+        "api_id": "b2d79e86-f2dd-46aa-8590-b33bbeae6cf3",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "75da0433-748a-4298-af87-d397dc77bda5",
+        "start_time": "2023-09-12T05:09:22.273Z",
+        "end_time": "2023-09-11T21:42:45.881Z",
+        "status": "Pending",
+        "created_at": "2023-09-12T01:33:41.471Z",
+        "updated_at": "2023-09-12T06:04:07.633Z",
+        "api_id": "ac67df56-2ed2-43c9-9e73-bfd6ef47b434",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5898c298-b5a9-4eaf-8319-52dbd80d8431",
+        "start_time": "2023-09-12T08:39:39.403Z",
+        "end_time": "2023-09-11T18:55:14.221Z",
+        "status": "Skipped",
+        "created_at": "2023-09-11T12:01:06.847Z",
+        "updated_at": "2023-09-11T09:50:51.125Z",
+        "api_id": "b2d79e86-f2dd-46aa-8590-b33bbeae6cf3",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e409965c-ff00-428c-abf7-e79b17607a3d",
+        "start_time": "2023-09-12T06:28:45.651Z",
+        "end_time": "2023-09-12T02:34:46.522Z",
+        "status": "Aborted",
+        "created_at": "2023-09-11T21:46:40.399Z",
+        "updated_at": "2023-09-12T00:59:28.094Z",
+        "api_id": "970fcf42-1c24-4106-8814-797c999aecf9",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "test_result": [
+      {
+        "id": "d30375b5-96c1-4fab-8461-d939afff885a",
+        "vulnerability": "SQL Injection",
+        "severity": "Critical",
+        "description": "The system is vulnerable to SQL Injection attacks",
+        "created_at": "2023-09-12T03:38:43.999Z",
+        "updated_at": "2023-09-11T12:56:54.581Z",
+        "test_run_id": "5898c298-b5a9-4eaf-8319-52dbd80d8431"
+      },
+      {
+        "id": "b2b7cbae-4a84-4e2f-bb5c-4fdd4da21cb9",
+        "vulnerability": "Cross-Site Scripting (XSS)",
+        "severity": "High",
+        "description": "Cross-Site Scripting vulnerability detected",
+        "created_at": "2023-09-11T11:36:12.085Z",
+        "updated_at": "2023-09-12T06:11:22.502Z",
+        "test_run_id": "6387ae4d-de54-445e-b2cb-30937329b932"
+      },
+      {
+        "id": "d30311a2-d184-407d-a5d4-54fa1def4bf1",
+        "vulnerability": "Broken Authentication",
+        "severity": "Medium",
+        "description": "Authentication mechanism is weak",
+        "created_at": "2023-09-11T09:29:37.831Z",
+        "updated_at": "2023-09-12T06:14:36.200Z",
+        "test_run_id": "6387ae4d-de54-445e-b2cb-30937329b932"
+      },
+      {
+        "id": "c17cb5bc-9a97-4fd2-9a66-e581fd3c8f6b",
+        "vulnerability": "Sensitive Data Exposure",
+        "severity": "Low",
+        "description": "Sensitive data is exposed",
+        "created_at": "2023-09-12T06:24:13.970Z",
+        "updated_at": "2023-09-12T07:01:44.930Z",
+        "test_run_id": "75da0433-748a-4298-af87-d397dc77bda5"
+      },
+      {
+        "id": "b137c7f4-f9df-49e0-b034-5817325bdabe",
+        "vulnerability": "XML External Entity (XXE)",
+        "severity": "Informational",
+        "description": "XML External Entity vulnerability found",
+        "created_at": "2023-09-11T15:24:21.673Z",
+        "updated_at": "2023-09-11T21:09:22.582Z",
+        "test_run_id": "6387ae4d-de54-445e-b2cb-30937329b932"
+      }
+    ],
+    "ci_cd_integration": [
+      {
+        "id": "bd962c8e-70b1-4821-b1b5-f4105d0d098a",
+        "name": "Jenkins",
+        "integration_type": "Continuous Integration",
+        "created_at": "2023-09-11T18:10:00.920Z",
+        "updated_at": "2023-09-11T18:31:26.927Z",
+        "api_id": "a6630959-5147-41e2-a262-3ec05b2eb7c3",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "17fc7277-6a29-47d0-bea8-e107e43d8472",
+        "name": "Travis CI",
+        "integration_type": "Continuous Deployment",
+        "created_at": "2023-09-12T01:26:55.064Z",
+        "updated_at": "2023-09-11T09:43:52.562Z",
+        "api_id": "ac67df56-2ed2-43c9-9e73-bfd6ef47b434",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "31babcb0-4475-4970-921c-6510049065f4",
+        "name": "CircleCI",
+        "integration_type": "Continuous Delivery",
+        "created_at": "2023-09-11T15:26:38.705Z",
+        "updated_at": "2023-09-12T00:00:10.658Z",
+        "api_id": "b2d79e86-f2dd-46aa-8590-b33bbeae6cf3",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5d57266c-4343-4b70-9761-ab91839fe546",
+        "name": "GitLab CI/CD",
+        "integration_type": "Code Review",
+        "created_at": "2023-09-12T07:42:34.879Z",
+        "updated_at": "2023-09-11T10:45:58.516Z",
+        "api_id": "d1795b4f-343e-49c1-aa58-7e514bb3de03",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "84ce6848-8578-4ba1-a0d3-7f1037a11450",
+        "name": "Bitbucket Pipelines",
+        "integration_type": "Test Automation",
+        "created_at": "2023-09-12T01:03:32.656Z",
+        "updated_at": "2023-09-12T08:44:59.726Z",
+        "api_id": "970fcf42-1c24-4106-8814-797c999aecf9",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "81ac5498-f951-467f-9d11-c13876709131",
+        "email": "August.Bosco95@yahoo.com",
+        "firstName": "Thad",
+        "lastName": "Grady",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1222.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "efdf0e11-45ab-43cd-b32f-120ff175cd90",
+        "email": "Tess79@gmail.com",
+        "firstName": "Tommie",
+        "lastName": "Luettgen-Erdman",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7386979",
+        "tenantId": null
+      },
+      {
+        "reference": "504b19b8-6618-47ab-b531-943b6879013f",
+        "email": "Emilie.Ruecker@gmail.com",
+        "firstName": "Sydni",
+        "lastName": "Miller",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73123568",
+        "tenantId": null
+      },
+      {
+        "reference": "e86a9c84-a720-4254-85d2-4748e21b84e2",
+        "email": "Merritt_Volkman@hotmail.com",
+        "firstName": "Christophe",
+        "lastName": "VonRueden",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1229.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "59245b05-d2f5-4c6a-b32f-e423db7497cf",
+        "email": "Turner_Lynch@gmail.com",
+        "firstName": "Estella",
+        "lastName": "Beatty",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/90163673",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "api": [
+      {
+        "id": "8ef73eb9-2d80-4f1e-a0c3-0fe3ab225f17",
+        "name": "Weather API",
+        "format": "JSON",
+        "created_at": "2023-09-11T19:57:31.596Z",
+        "updated_at": "2023-09-11T21:18:30.679Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "9d24d48d-e7c5-446c-8e95-5ffa397e11fc",
+        "name": "Payment Gateway API",
+        "format": "XML",
+        "created_at": "2023-09-11T16:01:45.796Z",
+        "updated_at": "2023-09-11T14:34:58.499Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "a913de8b-7428-4f60-850d-9da25e03983c",
+        "name": "Social Media API",
+        "format": "CSV",
+        "created_at": "2023-09-11T20:11:30.950Z",
+        "updated_at": "2023-09-12T02:13:36.401Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "fde89767-a4db-4a5b-8869-7ace29fd2be5",
+        "name": "Email Delivery API",
+        "format": "GraphQL",
+        "created_at": "2023-09-11T14:13:21.829Z",
+        "updated_at": "2023-09-11T10:47:27.610Z",
+        "organization_id": "main_entity_pk"
+      },
+      {
+        "id": "e75f994e-ccd5-491a-a42c-3e100a73db90",
+        "name": "Maps API",
+        "format": "Protobuf",
+        "created_at": "2023-09-11T09:35:47.482Z",
+        "updated_at": "2023-09-11T15:18:24.764Z",
+        "organization_id": "main_entity_pk"
+      }
+    ],
+    "test_run": [
+      {
+        "id": "b2a75cdb-1e08-4cac-9c33-581654332cae",
+        "start_time": "2023-09-11T15:23:12.722Z",
+        "end_time": "2023-09-11T18:31:53.147Z",
+        "status": "Passed",
+        "created_at": "2023-09-12T00:32:40.852Z",
+        "updated_at": "2023-09-12T09:06:54.608Z",
+        "api_id": "a913de8b-7428-4f60-850d-9da25e03983c",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "02b47408-1ac6-4bb2-a3ef-a2c5f31e9936",
+        "start_time": "2023-09-12T03:18:00.892Z",
+        "end_time": "2023-09-12T01:31:41.888Z",
+        "status": "Failed",
+        "created_at": "2023-09-12T06:44:30.394Z",
+        "updated_at": "2023-09-11T12:56:58.581Z",
+        "api_id": "9d24d48d-e7c5-446c-8e95-5ffa397e11fc",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "36809856-2795-402d-8b5b-20b7b7ef10e9",
+        "start_time": "2023-09-11T17:29:13.357Z",
+        "end_time": "2023-09-11T10:41:13.099Z",
+        "status": "Running",
+        "created_at": "2023-09-11T19:26:17.408Z",
+        "updated_at": "2023-09-12T03:13:25.136Z",
+        "api_id": "9d24d48d-e7c5-446c-8e95-5ffa397e11fc",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "15f54ae9-3d9c-4b94-8256-3d5f29ee1f6e",
+        "start_time": "2023-09-12T02:21:32.448Z",
+        "end_time": "2023-09-11T23:17:23.759Z",
+        "status": "Pending",
+        "created_at": "2023-09-11T14:54:48.181Z",
+        "updated_at": "2023-09-12T04:45:34.904Z",
+        "api_id": "a913de8b-7428-4f60-850d-9da25e03983c",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5e5d8a67-c69d-474a-896a-f70631b0421b",
+        "start_time": "2023-09-11T13:54:30.301Z",
+        "end_time": "2023-09-12T03:29:18.523Z",
+        "status": "Aborted",
+        "created_at": "2023-09-12T08:03:04.980Z",
+        "updated_at": "2023-09-12T01:52:17.023Z",
+        "api_id": "e75f994e-ccd5-491a-a42c-3e100a73db90",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "test_result": [
+      {
+        "id": "02066992-b45f-46d9-b229-ea054a05c0fd",
+        "vulnerability": "Cross-site scripting (XSS)",
+        "severity": "Critical",
+        "description": "This vulnerability allows an attacker to execute arbitrary JavaScript code.",
+        "created_at": "2023-09-11T20:37:44.939Z",
+        "updated_at": "2023-09-11T23:01:52.562Z",
+        "test_run_id": "b2a75cdb-1e08-4cac-9c33-581654332cae"
+      },
+      {
+        "id": "74d7703b-27f9-4d44-a307-13302aedec62",
+        "vulnerability": "SQL injection",
+        "severity": "High",
+        "description": "This vulnerability allows an attacker to manipulate database queries.",
+        "created_at": "2023-09-12T05:52:34.268Z",
+        "updated_at": "2023-09-11T19:27:55.357Z",
+        "test_run_id": "15f54ae9-3d9c-4b94-8256-3d5f29ee1f6e"
+      },
+      {
+        "id": "8dc821d0-6546-4c40-8c30-6e8e152a7a14",
+        "vulnerability": "Remote code execution",
+        "severity": "Medium",
+        "description": "This vulnerability allows an attacker to execute code on a remote server.",
+        "created_at": "2023-09-12T04:08:43.012Z",
+        "updated_at": "2023-09-11T21:32:10.463Z",
+        "test_run_id": "15f54ae9-3d9c-4b94-8256-3d5f29ee1f6e"
+      },
+      {
+        "id": "3e6fbdd6-cb93-494e-a320-8c9a6924e652",
+        "vulnerability": "Cross-site request forgery (CSRF)",
+        "severity": "Low",
+        "description": "This vulnerability allows an attacker to perform actions on behalf of an authenticated user.",
+        "created_at": "2023-09-11T19:06:23.041Z",
+        "updated_at": "2023-09-11T10:11:02.646Z",
+        "test_run_id": "15f54ae9-3d9c-4b94-8256-3d5f29ee1f6e"
+      },
+      {
+        "id": "0e73a0d6-08b2-4163-9239-e9e10ec07622",
+        "vulnerability": "Broken authentication",
+        "severity": "Informational",
+        "description": "This vulnerability allows an attacker to bypass authentication mechanisms.",
+        "created_at": "2023-09-11T11:10:46.461Z",
+        "updated_at": "2023-09-11T19:40:33.878Z",
+        "test_run_id": "02b47408-1ac6-4bb2-a3ef-a2c5f31e9936"
+      }
+    ],
+    "ci_cd_integration": [
+      {
+        "id": "54b7cb59-7cf4-4e0c-88b2-a96bc8d85ce9",
+        "name": "Jenkins",
+        "integration_type": "Continuous Integration",
+        "created_at": "2023-09-12T06:20:01.873Z",
+        "updated_at": "2023-09-11T23:30:21.753Z",
+        "api_id": "a913de8b-7428-4f60-850d-9da25e03983c",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "95bcf805-6bec-435d-a747-cd2b2c96e5f7",
+        "name": "Travis CI",
+        "integration_type": "Continuous Deployment",
+        "created_at": "2023-09-12T00:54:45.272Z",
+        "updated_at": "2023-09-12T02:29:54.022Z",
+        "api_id": "8ef73eb9-2d80-4f1e-a0c3-0fe3ab225f17",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "580604ec-a46e-4ffb-9f01-085808e1749b",
+        "name": "CircleCI",
+        "integration_type": "Continuous Delivery",
+        "created_at": "2023-09-12T05:24:35.614Z",
+        "updated_at": "2023-09-12T00:46:22.881Z",
+        "api_id": "a913de8b-7428-4f60-850d-9da25e03983c",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0607aa2b-65f3-4c4a-b4f0-8de122728584",
+        "name": "GitLab CI/CD",
+        "integration_type": "Version Control",
+        "created_at": "2023-09-11T18:53:24.483Z",
+        "updated_at": "2023-09-12T04:49:14.433Z",
+        "api_id": "e75f994e-ccd5-491a-a42c-3e100a73db90",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c4cb4896-81e0-4ab9-8e6f-c3fca7ed942f",
+        "name": "Bitbucket Pipelines",
+        "integration_type": "Automated Testing",
+        "created_at": "2023-09-11T18:42:58.524Z",
+        "updated_at": "2023-09-11T17:45:11.370Z",
+        "api_id": "fde89767-a4db-4a5b-8869-7ace29fd2be5",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "98aee12b-7d23-44c3-853e-59b0ab542ad9",
+        "email": "King81@hotmail.com",
+        "firstName": "Nyah",
+        "lastName": "Koss",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/254.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "e679642a-6450-49cf-92b4-ef3faa6895d6",
+        "email": "Anne20@yahoo.com",
+        "firstName": "Reagan",
+        "lastName": "Dickens-Johns",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/554.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "5c594366-f1b8-4320-aa86-3777243c1a4c",
+        "email": "Montana56@hotmail.com",
+        "firstName": "Louie",
+        "lastName": "Orn",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/629.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "763d5709-1065-4c20-a81c-9d046a66cb51",
+        "email": "Buddy.Schamberger@gmail.com",
+        "firstName": "Janis",
+        "lastName": "Johnson",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/284.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d3169d5c-eb6c-4cb4-b2ff-8aac4586abd1",
+        "email": "Remington_Effertz@yahoo.com",
+        "firstName": "Eula",
+        "lastName": "Kemmer-Powlowski",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/9145428",
+        "tenantId": null
+      }
+    ]
+  }
+]
